@@ -2,7 +2,7 @@ import { Container } from "@/components/container"
 
 export default function Page() {
   return (
-    <div className="bg-white">
+    <div className="bg-white dark:bg-neutral-900">
       <section aria-labelledby="home-page">
         <h2 id="home-page" className="sr-only">
           Home page

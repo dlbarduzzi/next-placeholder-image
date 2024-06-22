@@ -5,12 +5,17 @@ import { cn } from "@/lib/utils"
 
 export function Footer() {
   return (
-    <footer className="border-t border-t-gray-200 bg-white">
+    <footer
+      className={cn(
+        "border-t border-t-gray-200 bg-white",
+        "dark:border-t-neutral-700/60 dark:bg-neutral-900"
+      )}
+    >
       <Container className="py-5">
         <div
           className={cn(
             "flex flex-col items-center justify-center",
-            "text-sm text-gray-500 sm:flex-row"
+            "text-sm text-gray-500 dark:text-neutral-400 sm:flex-row"
           )}
         >
           <p>
