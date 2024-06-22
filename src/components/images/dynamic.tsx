@@ -1,15 +1,15 @@
 import Image from "next/image"
 
 import { cn } from "@/lib/utils"
-import { getStaticImage } from "@/server/static-image"
+import { getDynamicImage } from "@/server/dynamic-image"
 
-type PlaceholderImageProps = {
-  src: string
+type DynamicImageProps = {
+  url: string
   alt: string
 }
 
-export async function PlaceholderImage({ src, alt }: PlaceholderImageProps) {
-  const resp = await getStaticImage(`./public${src}`)
+export async function DynamicImage({ url, alt }: DynamicImageProps) {
+  const resp = await getDynamicImage(url)
 
   if (!resp.ok) {
     return null
@@ -17,7 +17,7 @@ export async function PlaceholderImage({ src, alt }: PlaceholderImageProps) {
 
   return (
     <Image
-      src={src}
+      src={url}
       fill
       alt={alt}
       sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
