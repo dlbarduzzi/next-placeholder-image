@@ -4,7 +4,9 @@ This is a [Next.js](https://nextjs.org/) example app showing how to use the [Ima
 
 ## Getting Started
 
-Install dependencies and run the app.
+First, create a `.env` file similar to [`.env.example`](https://github.com/dlbarduzzi/next-task/blob/main/.env.example).
+
+Then, Install dependencies and run the app.
 
 ```sh
 npm install
