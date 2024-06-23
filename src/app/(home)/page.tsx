@@ -104,6 +104,7 @@ export default function Page() {
         <div>
           <div className="border-b border-b-gray-200 pb-1 dark:border-b-neutral-700/60">
             <h2
+              id="static"
               className={cn(
                 "text-2xl font-bold tracking-tight text-gray-800 dark:text-neutral-200"
               )}
@@ -233,6 +234,7 @@ export default function Page() {
         <div>
           <div className="border-b border-b-gray-200 pb-1 dark:border-b-neutral-700/60">
             <h2
+              id="dynamic"
               className={cn(
                 "text-2xl font-bold tracking-tight text-gray-800 dark:text-neutral-200"
               )}
@@ -298,17 +300,6 @@ export default function Page() {
                 ))}
               </ul>
             </div>
-          </div>
-        </div>
-        <div>
-          <div className="border-b border-b-gray-200 pb-1 dark:border-b-neutral-700/60">
-            <h2
-              className={cn(
-                "text-2xl font-bold tracking-tight text-gray-800 dark:text-neutral-200"
-              )}
-            >
-              Animated Images
-            </h2>
           </div>
         </div>
       </Container>

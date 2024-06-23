@@ -33,7 +33,7 @@ export async function Navbar() {
           <ul className="flex items-center gap-x-8">
             <li>
               <Link
-                href="/"
+                href="#static"
                 prefetch={false}
                 className={cn(
                   "text-[13px] font-medium transition-colors",
@@ -49,7 +49,7 @@ export async function Navbar() {
             </li>
             <li>
               <Link
-                href="/dynamic"
+                href="#dynamic"
                 prefetch={false}
                 className={cn(
                   "text-[13px] font-medium transition-colors",
@@ -61,22 +61,6 @@ export async function Navbar() {
                 )}
               >
                 Dynamic
-              </Link>
-            </li>
-            <li>
-              <Link
-                href="/animated"
-                prefetch={false}
-                className={cn(
-                  "text-[13px] font-medium transition-colors",
-                  "focus:outline-none focus-visible:outline",
-                  "focus-visible:outline-2 focus-visible:outline-offset-2",
-                  "text-gray-900 hover:text-gray-600 focus-visible:outline-gray-900",
-                  "dark:text-neutral-200 dark:hover:text-neutral-50",
-                  "dark:focus-visible:outline-neutral-50"
-                )}
-              >
-                Animated
               </Link>
             </li>
             <li>
