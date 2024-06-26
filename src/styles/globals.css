@@ -20,6 +20,6 @@
   select,
   select[multiple],
   textarea {
-    @apply focus:outline-none focus:ring-0 focus:ring-offset-0 dark:focus:outline-none dark:focus:ring-0 dark:focus:ring-offset-0;
+    @apply focus:outline-none focus:ring-0 focus:ring-offset-0;
   }
 }

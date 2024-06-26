@@ -94,7 +94,7 @@ const fileImages: FileImage[] = [
 
 export default function Page() {
   return (
-    <div className="bg-white dark:bg-neutral-900">
+    <div className="bg-white">
       <section aria-labelledby="home-page">
         <h2 id="home-page" className="sr-only">
           Home page
@@ -102,22 +102,13 @@ export default function Page() {
       </section>
       <Container className="space-y-12 py-8">
         <div>
-          <div className="border-b border-b-gray-200 pb-1 dark:border-b-neutral-700/60">
-            <h2
-              id="static"
-              className={cn(
-                "text-2xl font-bold tracking-tight text-gray-800 dark:text-neutral-200"
-              )}
-            >
+          <div className="border-b border-b-gray-200 pb-1">
+            <h2 id="static" className="text-2xl font-bold tracking-tight text-gray-800">
               Static Images
             </h2>
           </div>
           <div>
-            <p
-              className={cn(
-                "pt-6 text-sm uppercase italic text-gray-500 dark:text-neutral-400"
-              )}
-            >
+            <p className="pt-6 text-sm uppercase italic text-gray-500">
               Blur / Default
             </p>
             <div className="pt-6">
@@ -133,11 +124,9 @@ export default function Page() {
                     <div
                       className={cn(
                         "group relative block aspect-[10/12] w-full overflow-hidden",
-                        "rounded-lg focus-within:ring-2 focus-within:ring-offset-2",
-                        "bg-gray-100 focus-within:ring-gray-900",
-                        "focus-within:ring-offset-white",
-                        "dark:bg-neutral-700/30 dark:focus-within:ring-neutral-50",
-                        "dark:focus-within:ring-offset-gray-900"
+                        "rounded-lg bg-gray-100 focus-within:ring-2",
+                        "focus-within:ring-gray-900 focus-within:ring-offset-2",
+                        "focus-within:ring-offset-white"
                       )}
                     >
                       <StaticImage src={fi.image} alt={fi.title} />
@@ -152,16 +141,13 @@ export default function Page() {
                       <p
                         className={cn(
                           "pointer-events-none block truncate text-sm font-medium",
-                          "text-gray-900 dark:text-neutral-200"
+                          "text-gray-900"
                         )}
                       >
                         {fi.title}
                       </p>
                       <p
-                        className={cn(
-                          "pointer-events-none block text-sm font-medium",
-                          "text-gray-500 dark:text-neutral-400"
-                        )}
+                        className={cn("pointer-events-none block text-sm font-medium")}
                       >
                         {fi.size}
                       </p>
@@ -172,11 +158,7 @@ export default function Page() {
             </div>
           </div>
           <div className="pt-6">
-            <p
-              className={cn(
-                "pt-6 text-sm uppercase italic text-gray-500 dark:text-neutral-400"
-              )}
-            >
+            <p className="pt-6 text-sm uppercase italic text-gray-500">
               Blur / Plaiceholder
             </p>
             <div className="pt-6">
@@ -192,11 +174,9 @@ export default function Page() {
                     <div
                       className={cn(
                         "group relative block aspect-[10/12] w-full overflow-hidden",
-                        "rounded-lg focus-within:ring-2 focus-within:ring-offset-2",
-                        "bg-gray-100 focus-within:ring-gray-900",
-                        "focus-within:ring-offset-white",
-                        "dark:bg-neutral-700/30 dark:focus-within:ring-neutral-50",
-                        "dark:focus-within:ring-offset-gray-900"
+                        "rounded-lg bg-gray-100 focus-within:ring-2",
+                        "focus-within:ring-gray-900 focus-within:ring-offset-2",
+                        "focus-within:ring-offset-white"
                       )}
                     >
                       <PlaceholderImage src={fi.src} alt={fi.title} />
@@ -211,16 +191,13 @@ export default function Page() {
                       <p
                         className={cn(
                           "pointer-events-none block truncate text-sm font-medium",
-                          "text-gray-900 dark:text-neutral-200"
+                          "text-gray-900"
                         )}
                       >
                         {fi.title}
                       </p>
                       <p
-                        className={cn(
-                          "pointer-events-none block text-sm font-medium",
-                          "text-gray-500 dark:text-neutral-400"
-                        )}
+                        className={cn("pointer-events-none block text-sm font-medium")}
                       >
                         {fi.size}
                       </p>
@@ -232,22 +209,16 @@ export default function Page() {
           </div>
         </div>
         <div>
-          <div className="border-b border-b-gray-200 pb-1 dark:border-b-neutral-700/60">
+          <div className="border-b border-b-gray-200 pb-1">
             <h2
               id="dynamic"
-              className={cn(
-                "text-2xl font-bold tracking-tight text-gray-800 dark:text-neutral-200"
-              )}
+              className="text-2xl font-bold tracking-tight text-gray-800"
             >
               Dynamic Images
             </h2>
           </div>
           <div>
-            <p
-              className={cn(
-                "pt-6 text-sm uppercase italic text-gray-500 dark:text-neutral-400"
-              )}
-            >
+            <p className="pt-6 text-sm uppercase italic text-gray-500">
               Blur / Plaiceholder
             </p>
             <div className="pt-6">
@@ -263,11 +234,9 @@ export default function Page() {
                     <div
                       className={cn(
                         "group relative block aspect-[10/12] w-full overflow-hidden",
-                        "rounded-lg focus-within:ring-2 focus-within:ring-offset-2",
-                        "bg-gray-100 focus-within:ring-gray-900",
-                        "focus-within:ring-offset-white",
-                        "dark:bg-neutral-700/30 dark:focus-within:ring-neutral-50",
-                        "dark:focus-within:ring-offset-gray-900"
+                        "rounded-lg bg-gray-100 focus-within:ring-2",
+                        "focus-within:ring-gray-900 focus-within:ring-offset-2",
+                        "focus-within:ring-offset-white"
                       )}
                     >
                       <DynamicImage url={fi.url} alt={fi.title} />
@@ -282,7 +251,7 @@ export default function Page() {
                       <p
                         className={cn(
                           "pointer-events-none block truncate text-sm font-medium",
-                          "text-gray-900 dark:text-neutral-200"
+                          "text-gray-900"
                         )}
                       >
                         {fi.title}
@@ -290,7 +259,7 @@ export default function Page() {
                       <p
                         className={cn(
                           "pointer-events-none block text-sm font-medium",
-                          "text-gray-500 dark:text-neutral-400"
+                          "text-gray-500"
                         )}
                       >
                         {fi.size}

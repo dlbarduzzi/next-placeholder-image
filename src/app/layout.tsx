@@ -3,7 +3,6 @@ import type { Metadata, Viewport } from "next"
 import "@/styles/globals.css"
 
 import { TailwindIndicator } from "@/components/tailwind-indicator"
-import { ThemeProvider } from "@/providers/theme"
 
 import { fontSans } from "@/fonts/fonts"
 import { siteConfig } from "@/lib/site"
@@ -40,21 +39,12 @@ export default function RootLayout({ children }: RootLayoutProps) {
       <head />
       <body
         className={cn(
-          "min-h-screen font-sans",
-          "bg-white text-gray-600",
-          "dark:bg-neutral-900 dark:text-neutral-200",
+          "min-h-screen bg-white font-sans text-gray-600",
           fontSans.variable
         )}
       >
-        <ThemeProvider
-          attribute="class"
-          defaultTheme="system"
-          enableSystem
-          disableTransitionOnChange
-        >
-          {children}
-          <TailwindIndicator />
-        </ThemeProvider>
+        {children}
+        <TailwindIndicator />
       </body>
     </html>
   )
